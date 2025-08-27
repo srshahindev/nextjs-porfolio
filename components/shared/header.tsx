@@ -1,12 +1,15 @@
 import { Logo } from './logo'
+import { MobileNav } from './mobilenav'
 import { Navbar } from './navbar'
+import { Search } from './search'
 
 export const Header = () => {
   return (
-    <header>
+    <header className='flex items-center justify-between pt-4'>
       <Logo />
       <Navbar />
-      <div>Search</div>
+      <Search />
+      <MobileNav />
     </header>
   )
 }

@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -7,6 +7,10 @@ body,
 html,
 :root {
   height: 100%;
+}
+
+@theme {
+  --color-bgPrimary: #111827;
 }
 
 @theme inline {
@@ -123,4 +127,19 @@ html,
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@keyframes gradient-x {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 300% 300%;
+  animation: gradient-x 6s linear infinite;
 }

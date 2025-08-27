@@ -1,10 +1,9 @@
 import { Header } from '@/components/shared/header'
-import { Navbar } from '@/components/shared/navbar'
 
 export default function Home() {
   return (
-    <main>
+    <div className='mx-auto w-full max-w-7xl px-6'>
       <Header />
-    </main>
+    </div>
   )
 }
