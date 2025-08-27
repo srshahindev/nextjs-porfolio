@@ -8,7 +8,11 @@ export const Navbar = () => {
     <nav className='animate-gradient-x relative hidden overflow-hidden rounded-full bg-[linear-gradient(90deg,#ec4899,transparent,#8b5cf6,#f97316)] p-[1.2px] min-[950px]:block'>
       <div className='bg-bgPrimary relative flex items-center gap-x-8 rounded-full py-1.5 pr-4 pl-8 backdrop-blur-md'>
         {NavLinks.map(link => (
-          <Link key={link.label} href={link.href}>
+          <Link
+            key={link.label}
+            href={link.href}
+            className='text-white/80 transition duration-300 hover:text-white'
+          >
             {link.label}
           </Link>
         ))}

@@ -7,14 +7,18 @@ import {
 import { NavLinks } from '@/constants'
 import { ArrowRight, SearchIcon } from 'lucide-react'
 import Link from 'next/link'
-import { Ctrlk } from './ctrlk'
 
 export const Search = () => {
   return (
     <>
       <Dialog>
         <DialogTrigger asChild>
-          <Ctrlk />
+          <div className='relative hidden overflow-hidden rounded-lg p-[1.2px] min-[950px]:block'>
+            <div className='absolute inset-0 animate-spin rounded bg-linear-to-l from-purple-500 to-pink-400 [animation-duration:_4s]'></div>
+            <button className='bg-bgPrimary relative cursor-pointer rounded-sm px-4 py-2 text-white/70 transition duration-300 hover:text-white'>
+              ctrl+k
+            </button>
+          </div>
         </DialogTrigger>
         <DialogContent className='w-[450px] border-1 border-neutral-500/25 bg-neutral-500/20 p-6 text-white ring-0 backdrop-blur-md'>
           <DialogTitle className='font-normal'>Search</DialogTitle>

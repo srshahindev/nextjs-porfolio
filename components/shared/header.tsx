@@ -5,7 +5,7 @@ import { Search } from './search'
 
 export const Header = () => {
   return (
-    <header className='flex items-center justify-between pt-4'>
+    <header className='flex w-full items-center justify-between pt-4'>
       <Logo />
       <Navbar />
       <Search />
