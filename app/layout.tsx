@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     default: 'Shahinur Rahman - Full Stack Developer',
     template: `%s | Shahinur Rahman`
   },
-  description: 'Shahinur Rahman - Full Stack Developer'
+  description: 'Shahinur Rahman - Full Stack Developer',
+  icons: {
+    icon: '/programmer.png'
+  }
 }
 
 export default function RootLayout({
@@ -23,7 +26,10 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${inter.className} antialiased`}>
-        <main className='bg-bgPrimary h-full text-white'>{children}</main>
+        <main className='bg-bgPrimary relative text-white'>
+          <div className='absolute inset-0 [background-image:linear-gradient(rgba(168,85,247,0.2)_1px,transparent_1px),linear-gradient(90deg,rgba(168,85,247,0.2)_1px,transparent_1px)] [background-size:100px_100px]'></div>
+          {children}
+        </main>
       </body>
     </html>
   )
