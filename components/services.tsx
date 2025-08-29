@@ -1,9 +1,9 @@
-import { CodeXml, Palette, Settings } from 'lucide-react'
+import { CodeXml, Palette, Settings, Zap } from 'lucide-react'
 import { ServiceCard } from './servicecard'
 
 export const Services = () => {
   return (
-    <section className='-mt-16'>
+    <section className='mt-12 lg:-mt-20'>
       <div>
         <div className='flex items-center justify-center gap-1 md:gap-3'>
           <h2 className='text-lg font-semibold md:text-2xl'>
@@ -17,21 +17,26 @@ export const Services = () => {
           your ideas to life with modern web solutions.
         </p>
       </div>
-      <div className='flex items-center justify-between gap-12 py-6'>
+      <div className='grid grid-cols-1 gap-8 py-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12'>
         <ServiceCard
           title='Web Development'
-          description='I build modern, responsive, and scalable websites using MERN & Next.js. From landing pages to full-stack apps, I ensure performance, clean code, and a smooth user experience.'
+          description='Modern, responsive websites and full-stack applications using MERN & Next.js.'
           icon={<CodeXml size={48} />}
         />
         <ServiceCard
           title='UI/UX & Front-End'
-          description='I craft pixel-perfect, user-friendly interfaces with Tailwind CSS, shadcn, and modern design practices. My focus is on accessibility, responsiveness, and interactive experiences.'
+          description='Clean, accessible, and interactive interfaces with Tailwind CSS & shadcn.'
           icon={<Palette size={48} />}
         />
         <ServiceCard
           title='API & Backend'
-          description='I develop secure and efficient back-end systems with Node.js, Express, and databases like MongoDB & PostgreSQL. I also integrate APIs and authentication systems such as Clerk & JWT.'
+          description='Secure APIs and back-end systems built with Node.js, Express, and databases.'
           icon={<Settings size={48} />}
+        />
+        <ServiceCard
+          title='Performance Tuning'
+          description='Fast loading, SEO-friendly, and production-ready applications for better user experience.'
+          icon={<Zap size={48} />}
         />
       </div>
     </section>
