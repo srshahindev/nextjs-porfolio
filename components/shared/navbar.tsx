@@ -11,7 +11,7 @@ export const Navbar = () => {
           <Link
             key={link.label}
             href={link.href}
-            className='text-white/80 transition duration-300 hover:text-white'
+            className='text-white/80 transition duration-300 hover:text-rose-400'
           >
             {link.label}
           </Link>

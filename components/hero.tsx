@@ -26,6 +26,7 @@ export const HeroSection = () => {
             height={180}
             width={180}
             className='rounded-md grayscale transition duration-500 hover:grayscale-0'
+            priority={true}
           />
           <Button variant='primary' size='sm' className='cursor-pointer'>
             Resume

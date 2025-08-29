@@ -1,4 +1,5 @@
 import { HeroSection } from '@/components/hero'
+import { Services } from '@/components/services'
 import { Header } from '@/components/shared/header'
 import { TeachStack } from '@/components/techstack'
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <TeachStack />
+      <Services />
     </div>
   )
 }
