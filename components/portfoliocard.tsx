@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const PortfolioCard = () => {
   return (
     <div className='flex items-center justify-center'>
-      <div className='group flex max-w-4xl justify-between gap-8 rounded-md border border-transparent bg-slate-800 from-pink-400/30 to-purple-500/30 pt-10 pr-10 pl-10 transition duration-300 *:flex-1 hover:border-1 hover:border-purple-500 hover:bg-linear-to-tl md:pr-0'>
+      <div className='group flex max-w-4xl justify-between gap-8 rounded-md border border-transparent bg-slate-800 from-pink-400/30 to-purple-500/30 pt-10 pr-10 pl-10 transition duration-200 *:flex-1 hover:border-1 hover:border-purple-500 hover:bg-linear-to-tl md:pr-0'>
         <div>
           <h2 className='bg-gradient-to-br from-pink-500 to-purple-500 bg-clip-text pb-2 text-2xl font-bold tracking-wider text-transparent uppercase'>
             Developer Portfolio
