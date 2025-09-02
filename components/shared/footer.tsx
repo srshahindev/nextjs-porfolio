@@ -10,6 +10,20 @@ export const Footer = () => {
   return (
     <footer className='py-6'>
       <div className='flex flex-col items-center justify-between gap-12 py-12 md:flex-row'>
+        <div className='flex flex-2/3 items-center justify-start'>
+          <div className='space-y-12 rounded-lg border border-purple-500/60 bg-slate-800/30 from-pink-400/30 to-purple-500/30 p-8 hover:bg-linear-to-br md:w-2/3'>
+            <div className='flex flex-col gap-6'>
+              <h2 className='text-xl font-semibold'>Let's Talk</h2>
+              <p>
+                Have a project in mind? Let's create something amazing together.
+              </p>
+              <a href='#' className='flex items-center gap-2'>
+                srshahin111@gmail.com <CgArrowTopRight />
+              </a>
+            </div>
+            <Button variant='primary'>Back to top</Button>
+          </div>
+        </div>
         <div className='flex flex-1/3 items-center gap-12'>
           <div className='flex flex-col gap-8'>
             <Logo />
@@ -36,20 +50,6 @@ export const Footer = () => {
                 </Link>
               ))}
             </div>
-          </div>
-        </div>
-        <div className='flex flex-2/3 items-center justify-end'>
-          <div className='space-y-12 rounded-lg bg-slate-800 p-8 md:w-2/3'>
-            <div className='flex flex-col gap-6'>
-              <h2>Let's Talk</h2>
-              <p>
-                Have a project in mind? Let's create something amazing together.
-              </p>
-              <a href='#' className='flex items-center gap-2'>
-                srshahin111@gmail.com <CgArrowTopRight />
-              </a>
-            </div>
-            <Button variant='primary'>Back to top</Button>
           </div>
         </div>
       </div>

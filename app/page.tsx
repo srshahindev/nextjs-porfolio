@@ -1,3 +1,4 @@
+import { ContactSection } from '@/components/contact'
 import { HeroSection } from '@/components/hero'
 import { PortFolio } from '@/components/portfolio'
 import { Services } from '@/components/services'
@@ -13,6 +14,7 @@ export default function Home() {
       <TeachStack />
       <Services />
       <PortFolio />
+      <ContactSection />
       <Footer />
     </div>
   )

@@ -17,7 +17,9 @@ export const PortFolio = () => {
         </p>
       </div>
       {/* todo portfolio card */}
-      <div>
+      <div className='flex h-[300vh] flex-col justify-between'>
+        <PortfolioCard />
+        <PortfolioCard />
         <PortfolioCard />
       </div>
     </section>
