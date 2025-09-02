@@ -1,4 +1,5 @@
 import { HeroSection } from '@/components/hero'
+import { PortFolio } from '@/components/portfolio'
 import { Services } from '@/components/services'
 import { Header } from '@/components/shared/header'
 import { TeachStack } from '@/components/techstack'
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <TeachStack />
       <Services />
+      <PortFolio />
     </div>
   )
 }
