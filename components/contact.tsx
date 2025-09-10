@@ -7,20 +7,18 @@ export const ContactSection = () => {
       <div className='flex flex-col items-center justify-between gap-24 *:flex-1 md:flex-row'>
         <div className='space-y-6'>
           <div className='space-y-2'>
-            <p className='text-lg tracking-wider text-slate-300'>
-              Get in touch
-            </p>
-            <h3 className='text-3xl font-bold text-rose-400 md:text-5xl'>
+            <p className='text-lg tracking-wider text-white'>Get in touch</p>
+            <h3 className='text-3xl font-bold text-white md:text-5xl'>
               Let's work together
             </h3>
           </div>
-          <p className='text-base tracking-normal text-slate-400 md:text-lg'>
+          <p className='text-textColor text-base tracking-normal md:text-lg'>
             I’m open to freelance, collaborative projects, and onsite
             opportunities. Let’s build something great together—get in touch!
           </p>
           <div className='flex flex-col gap-6'>
             <div className='group flex items-center gap-4'>
-              <div className='rounded-full bg-rose-400 from-purple-400 to-pink-500 p-2 transition duration-300 group-hover:bg-gradient-to-bl'>
+              <div className='bg-tealColor group-hover:bg-coralColor rounded-full p-2 transition duration-300'>
                 <LocationEdit size={24} />
               </div>
               <div className='space-y-1'>
@@ -31,7 +29,7 @@ export const ContactSection = () => {
               </div>
             </div>
             <div className='group flex items-center gap-4'>
-              <div className='rounded-full bg-rose-400 from-purple-400 to-pink-500 p-2 transition duration-300 group-hover:bg-gradient-to-bl'>
+              <div className='bg-tealColor group-hover:bg-coralColor rounded-full p-2 transition duration-300'>
                 <Mail size={24} />
               </div>
               <div className='space-y-1'>
@@ -42,7 +40,7 @@ export const ContactSection = () => {
               </div>
             </div>
             <div className='group flex items-center gap-4'>
-              <div className='rounded-full bg-rose-400 from-purple-400 to-pink-500 p-2 transition duration-300 group-hover:bg-gradient-to-bl'>
+              <div className='bg-tealColor group-hover:bg-coralColor rounded-full p-2 transition duration-300'>
                 <Phone size={24} />
               </div>
               <div className='space-y-1'>
@@ -57,7 +55,7 @@ export const ContactSection = () => {
         <div className='w-full'>
           <form
             action=''
-            className='space-y-8 rounded-lg border border-purple-500/60 bg-slate-800/30 p-12'
+            className='hover:border-coralColor space-y-8 rounded-lg border border-transparent bg-slate-800 p-12'
           >
             <div className='flex flex-col gap-2'>
               <label htmlFor='name'>Name</label>
@@ -91,7 +89,7 @@ export const ContactSection = () => {
             </div>
             <Button
               size='lg'
-              variant='primary'
+              variant='custom'
               type='submit'
               className='flex w-full cursor-pointer items-center justify-center gap-1 rounded-md'
             >

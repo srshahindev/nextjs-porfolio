@@ -28,7 +28,7 @@ export const AnimateText = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.5, ease: 'easeIn' }}
-          className='block text-xl font-semibold text-rose-400 md:text-2xl'
+          className='text-tealColor block font-semibold md:text-2xl'
         >
           {roles[index]}
         </motion.span>

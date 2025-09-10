@@ -11,6 +11,9 @@ html,
 
 @theme {
   --color-bgPrimary: #111827;
+  --color-tealColor: #00adb5;
+  --color-coralColor: #ff6b6b;
+  --color-textColor: #eeeeee;
 }
 
 @theme inline {

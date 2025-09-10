@@ -11,7 +11,7 @@ export const Footer = () => {
     <footer className='py-6'>
       <div className='flex flex-col items-center justify-between gap-12 py-12 md:flex-row'>
         <div className='flex flex-2/3 items-center justify-start'>
-          <div className='space-y-12 rounded-lg border border-purple-500/60 bg-slate-800/30 from-pink-400/30 to-purple-500/30 p-8 hover:bg-linear-to-br md:w-2/3'>
+          <div className='hover:border-coralColor space-y-12 rounded-lg border border-transparent bg-slate-800 p-8 hover:bg-linear-to-br md:w-2/3'>
             <div className='flex flex-col gap-6'>
               <h2 className='text-xl font-semibold'>Let's Talk</h2>
               <p>
@@ -21,7 +21,7 @@ export const Footer = () => {
                 srshahin111@gmail.com <CgArrowTopRight />
               </a>
             </div>
-            <Button variant='primary'>Back to top</Button>
+            <Button variant='custom'>Back to top</Button>
           </div>
         </div>
         <div className='flex flex-1/3 items-center gap-12'>
@@ -54,12 +54,12 @@ export const Footer = () => {
         </div>
       </div>
       <hr className='border-slate-600' />
-      <div className='flex flex-col items-center justify-between gap-8 md:flex-row'>
-        <div className='pt-6'>
-          <p className='text-sm font-light tracking-wider text-slate-500'>
+      <div className='flex flex-col items-center justify-between gap-8 pt-6 md:flex-row'>
+        <div className=''>
+          <p className='text-textColor text-sm font-light tracking-wider'>
             &copy; 2025 Shahinur Rahman. All right reserved.
           </p>
-          <div className='mt-4 flex gap-4 rounded border border-slate-600 px-2 py-2 text-xs text-slate-300'>
+          {/* <div className='mt-4 flex gap-4 rounded border border-slate-600 px-2 py-2 text-xs text-slate-300'>
             <p className='flex items-center gap-3'>
               <span className='block h-2 w-2 rounded-full bg-green-500'></span>
               Performance: 98
@@ -72,9 +72,9 @@ export const Footer = () => {
               <span></span>
               Uptime: 99.9%
             </p>
-          </div>
+          </div> */}
         </div>
-        <p className='flex items-center gap-2 text-xs text-slate-500'>
+        <p className='text-textColor flex items-center gap-2 text-xs'>
           Made with <Heart size={16} stroke='red' fill='red' /> in Kishoreganj,
           Bangladesh
         </p>

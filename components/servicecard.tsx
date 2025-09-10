@@ -14,13 +14,11 @@ export const ServiceCard = ({
   className
 }: ServiceProps) => {
   return (
-    <div className='flex h-full flex-col justify-between rounded-xl border border-pink-500/40 bg-gradient-to-bl from-pink-400/30 to-purple-500/30 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:from-purple-400/30 hover:to-pink-500/30'>
+    <div className='hover:border-coralColor flex h-full flex-col justify-between rounded-xl border border-transparent bg-slate-800 p-6 shadow-lg transition-transform duration-300 hover:scale-105'>
       <div className='flex flex-col gap-3'>
-        <div className='text-4xl text-pink-400'>{icon}</div>
-        <h3 className='text-xl font-bold tracking-wide text-rose-400'>
-          {title}
-        </h3>
-        <p className='text-[15px] text-gray-300'>{description}</p>
+        <div className='text-tealColor text-4xl'>{icon}</div>
+        <h3 className='text-xl font-bold tracking-wide text-white'>{title}</h3>
+        <p className='text-textColor text-[15px]'>{description}</p>
       </div>
     </div>
   )

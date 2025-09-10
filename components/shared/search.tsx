@@ -13,9 +13,9 @@ export const Search = () => {
     <>
       <Dialog>
         <DialogTrigger asChild>
-          <div className='relative hidden overflow-hidden rounded-lg p-[1.2px] min-[950px]:block'>
-            <div className='absolute inset-0 animate-spin rounded bg-linear-to-l from-purple-500 to-pink-400 [animation-duration:_4s]'></div>
-            <button className='bg-bgPrimary relative cursor-pointer rounded-sm px-4 py-2 text-white/70 transition duration-300 hover:text-white'>
+          <div className='group relative hidden overflow-hidden rounded-lg p-[1.5px] min-[950px]:block'>
+            <div className='from-tealColor to-coralColor absolute inset-0 animate-spin rounded bg-linear-to-l [animation-duration:_4s] group-hover:hidden'></div>
+            <button className='bg-bgPrimary hover:bg-tealColor relative cursor-pointer rounded-sm px-4 py-2 text-white transition duration-300'>
               ctrl+k
             </button>
           </div>
