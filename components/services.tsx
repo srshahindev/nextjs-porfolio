@@ -1,20 +1,15 @@
 import { CodeXml, Palette, Settings, Zap } from 'lucide-react'
 import { ServiceCard } from './servicecard'
+import SecondaryTitle from './SecondaryTitle'
 
 export const Services = () => {
   return (
     <section className='mt-12 lg:-mt-20'>
-      <div>
-        <div className='flex items-center justify-center gap-1 md:gap-3'>
-          <h2 className='text-lg font-bold md:text-2xl'>Services I Provide</h2>
-          <div className='bg-coralColor w-8 pb-[2px] md:w-20' />
-          <h2 className='text-lg md:text-2xl'>🖨️</h2>
-        </div>
-        <p className='text-tealColor mx-auto max-w-4xl px-0 pt-2 md:px-10 md:text-center'>
-          These are the services I specialize in, designed to help you bring
-          your ideas to life with modern web solutions.
-        </p>
-      </div>
+      <SecondaryTitle
+        title='Services I Provide'
+        description='These are the services I specialize in, designed to help you bring
+          your ideas to life with modern web solutions.'
+      />
       <div className='grid grid-cols-1 gap-8 py-6 pt-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12'>
         <ServiceCard
           title='Web Development'
