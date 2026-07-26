@@ -3,7 +3,7 @@ import { Button } from './ui/button'
 
 export const ContactSection = () => {
   return (
-    <section className='py-24'>
+    <section className='py-24' id='contact'>
       <div className='flex flex-col items-center justify-between gap-24 *:flex-1 md:flex-row'>
         <div className='space-y-6'>
           <div className='space-y-2'>

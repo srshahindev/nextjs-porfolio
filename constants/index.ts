@@ -1,11 +1,11 @@
-import { NavLink } from '@/types'
+import { NavLink, Project } from '@/types'
 
 export const NavLinks: NavLink[] = [
-  { label: 'Home', href: '/' },
-  { label: 'Work', href: '#work' },
-  { label: 'Services', href: '#Service' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Blog', href: '#blog' }
+  { label: 'Home', href: 'hero' },
+  { label: 'Work', href: 'work' },
+  { label: 'Services', href: 'service' },
+  { label: 'Projects', href: 'project' },
+  { label: 'Blog', href: 'blog' }
 ]
 
 export const Logos: string[] = [
@@ -38,4 +38,37 @@ export const Logos: string[] = [
   '/vercelwhite.svg',
   '/prisma.svg',
   '/prisma.svg'
+]
+
+export const PROJECTS_DATA: Project[] = [
+  {
+    id: 1,
+    title: 'Developer Portfolio',
+    description:
+      "A meta-project: my own portfolio website, the one you're on right now. The main challenge was to create an engaging and performant platform that elegantly presents my body of work. I handled every aspect of this project, from UI/UX design and development to final deployment.",
+    liveLink: '/',
+    githubLink: '/',
+    tags: [
+      'NextJs',
+      'typescript',
+      'ReactJs',
+      'tailwind',
+      'framer-motion',
+      'Threejs',
+      'shadcn'
+    ],
+    imageSrc: '/portfolio.png',
+    imageAlt: 'portfolio project'
+  },
+  {
+    id: 2,
+    title: 'E-Commerce Application',
+    description:
+      'A feature-rich e-commerce store with modern UI, shopping cart, user authentication, and online payment integration.',
+    liveLink: 'https://example.com',
+    githubLink: 'https://github.com/example',
+    tags: ['NextJs', 'Redux', 'Tailwind', 'Stripe'],
+    imageSrc: '/bfpabd.png',
+    imageAlt: 'ecommerce project'
+  }
 ]
