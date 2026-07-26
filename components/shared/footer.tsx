@@ -1,12 +1,27 @@
+'use client'
+
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
 import { Logo } from './logo'
 import { NavLinks } from '@/constants'
-import Link from 'next/link'
 import { CgArrowTopRight } from 'react-icons/cg'
 import { Button } from '../ui/button'
 import { Heart } from 'lucide-react'
 
 export const Footer = () => {
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string
+  ) => {
+    e.preventDefault()
+
+    const element = document.getElementById(targetId)
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
   return (
     <footer className='py-6'>
       <div className='flex flex-col items-center justify-between gap-12 py-12 md:flex-row'>
@@ -17,11 +32,18 @@ export const Footer = () => {
               <p>
                 Have a project in mind? Let's create something amazing together.
               </p>
-              <a href='#' className='flex items-center gap-2'>
+              <a
+                href='mailto://srshahin111@gmail.com'
+                className='flex items-center gap-2'
+              >
                 srshahin111@gmail.com <CgArrowTopRight />
               </a>
             </div>
-            <Button variant='custom'>Back to top</Button>
+            <Button variant='custom' asChild>
+              <a href='#hero' onClick={e => handleScroll(e, 'hero')}>
+                Back to Top
+              </a>
+            </Button>
           </div>
         </div>
         <div className='flex flex-1/3 items-center gap-12'>
@@ -32,8 +54,15 @@ export const Footer = () => {
               love.
             </p>
             <div className='flex items-center gap-4'>
-              <BsLinkedin size={24} />
-              <BsGithub size={24} />
+              <a href='https://github.com/srshaheen' target='_blank'>
+                <BsGithub size={24} />
+              </a>
+              <a
+                href='https://www.linkedin.com/in/shahinur-rahman-shahin/'
+                target='_blank'
+              >
+                <BsLinkedin size={24} />
+              </a>
             </div>
             <hr className='border-slate-700' />
           </div>
@@ -41,13 +70,14 @@ export const Footer = () => {
             <h3>Navigation</h3>
             <div className='flex flex-col gap-3 text-slate-400'>
               {NavLinks.map(link => (
-                <Link
+                <a
                   key={link.label}
-                  href={link.href}
+                  href={`#${link.href}`}
+                  onClick={e => handleScroll(e, link.href)}
                   className='font-light transition duration-300 hover:text-rose-400'
                 >
                   {link.label}
-                </Link>
+                </a>
               ))}
             </div>
           </div>

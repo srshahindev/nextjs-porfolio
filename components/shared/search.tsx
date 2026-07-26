@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Dialog,
   DialogContent,
@@ -6,9 +8,22 @@ import {
 } from '@/components/ui/dialog'
 import { NavLinks } from '@/constants'
 import { ArrowRight, SearchIcon } from 'lucide-react'
-import Link from 'next/link'
 
 export const Search = () => {
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string
+  ) => {
+    e.preventDefault()
+
+    const element = document.getElementById(targetId)
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
   return (
     <>
       <Dialog>
@@ -36,22 +51,24 @@ export const Search = () => {
             <p className='pb-3 text-sm text-neutral-400'>Quick Navigation</p>
             <div className='flex flex-col gap-3'>
               {NavLinks.map(link => (
-                <Link
+                <a
                   key={link.label}
-                  href={link.href}
+                  href={`#${link.href}`}
                   className='flex items-center justify-between rounded-sm bg-slate-800 px-4 py-2 transition duration-300 hover:bg-slate-500'
+                  onClick={e => handleScroll(e, link.href)}
                 >
                   {link.label}
                   <ArrowRight size={16} />
-                </Link>
+                </a>
               ))}
-              <Link
+              <a
                 href='#contact'
+                onClick={e => handleScroll(e, 'contact')}
                 className='flex items-center justify-between rounded-sm bg-slate-800 px-4 py-2 transition duration-300 hover:bg-slate-500'
               >
                 Contact
                 <ArrowRight size={16} />
-              </Link>
+              </a>
             </div>
           </div>
         </DialogContent>

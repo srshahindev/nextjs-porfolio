@@ -7,6 +7,9 @@ body,
 html,
 :root {
   height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #0f172a;
 }
 
 @theme {
@@ -130,6 +133,10 @@ html,
   body {
     @apply bg-background text-foreground;
   }
+}
+
+body[data-scroll-locked] {
+  padding-right: 0 !important;
 }
 
 @keyframes gradient-x {

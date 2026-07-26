@@ -5,7 +5,7 @@ import { AnimateText } from './animatedtext'
 
 export const HeroSection = () => {
   return (
-    <section className='text-white'>
+    <section className='text-white' id='hero'>
       <div className='pt-16'>
         <div className='space-y-3 text-center'>
           <p className='text-textColor text-2xl font-semibold'>Hey 👋 I'm</p>
@@ -28,9 +28,11 @@ export const HeroSection = () => {
             className='rounded-md grayscale transition duration-500 hover:grayscale-0'
             priority={true}
           />
-          <Button variant='custom' size='sm' className='cursor-pointer'>
-            Resume
-            <DownloadCloud />
+          <Button variant='custom' size='sm' className='cursor-pointer' asChild>
+            <a href='/resume.pdf' target='_blank'>
+              Resume
+              <DownloadCloud />
+            </a>
           </Button>
         </div>
       </div>
