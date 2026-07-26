@@ -46,8 +46,8 @@ export const PROJECTS_DATA: Project[] = [
     title: 'Developer Portfolio',
     description:
       "A meta-project: my own portfolio website, the one you're on right now. The main challenge was to create an engaging and performant platform that elegantly presents my body of work. I handled every aspect of this project, from UI/UX design and development to final deployment.",
-    liveLink: '/',
-    githubLink: '/',
+    liveLink: 'https://srshahindev.vercel.app/',
+    githubLink: 'https://github.com/srshaheen/nextjs-porfolio',
     tags: [
       'NextJs',
       'typescript',
@@ -66,7 +66,7 @@ export const PROJECTS_DATA: Project[] = [
     description:
       'A production-ready organization management system developed for Bajitpur Friends Property Alliance. The platform streamlines member management, authentication, and monthly/one-time contribution tracking through a modern, secure, and responsive web application built with Next.js, Prisma, and PostgreSQL.',
     liveLink: 'https://www.bfpabd.com',
-    githubLink: '#',
+    githubLink: 'https://github.com/srshaheen/bfpa-next-organization',
     tags: [
       'NextJs',
       'TypeScript',
@@ -86,7 +86,7 @@ export const PROJECTS_DATA: Project[] = [
     description:
       'A modern business website for an event production company, showcasing services, portfolio, and contact information. Built with Next.js and Sanity CMS to provide an intuitive content management experience, responsive design, and SEO-friendly architecture.',
     liveLink: 'https://vividcollective.co.uk',
-    githubLink: '#',
+    githubLink: 'https://github.com/srshaheen/vivid-collective',
     tags: [
       'NextJs',
       'TypeScript',
@@ -105,8 +105,8 @@ export const PROJECTS_DATA: Project[] = [
     title: 'Sobdhokotha',
     description:
       'A modern blog platform focused on delivering a clean reading experience with a responsive interface. Built using Next.js and TypeScript with performance, simplicity, and user experience as the primary goals.',
-    liveLink: '#',
-    githubLink: '#',
+    liveLink: 'https://sobdhokotha.vercel.app',
+    githubLink: 'https://github.com/srshaheen/nextjs-blog-sobdhokotha',
     tags: [
       'NextJs',
       'TypeScript',
